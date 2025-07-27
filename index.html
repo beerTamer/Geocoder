@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Геокодер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Geocoder</h1>
+        <form id="form">
+            <input type="text" id="address" placeholder="Введите адрес">
+            <button type="submit"> Найти</button>
+        </form>
+        <div id="map"></div>
+
+        <button id="open-history"> История</button>
+
+        <div id="history-modal" class="modal hidden">
+            <div class="modal-content">
+                <span id="close-history" class="close">&times;</span>
+                <h2>История запросов</h2>
+                <button id="clear-history" class="clear-history-btn">Очистить историю</button>
+                <ul id="history-list"></ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>Сделано с помощью Яндекс.Карт</p>
+        </footer>
+    </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=79de626a-10c0-4095-a330-f4d2432702f2&lang=ru_RU"></script>
+    <script src="script.js"></script>
+</body>
+</html>
