@@ -6,7 +6,8 @@ let placemark;
 function init() {
     map = new ymaps.Map("map", {
         center: [55.0084, 82.9357], 
-        zoom: 12
+        zoom: 12,
+        controls: [] 
     });
 
     loadHistory();

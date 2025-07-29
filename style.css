@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif; 
     background-color: #1e1e2f;
     color: #ffffff;
     background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
@@ -17,7 +17,6 @@ body {
 
 h1 {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #ffcc00;
@@ -29,7 +28,7 @@ form {
     margin-bottom: 20px;
 }
 
-input[type=\"text\"] {
+input[type="text"] {
     flex: 1;
     padding: 10px;
     border-radius: 6px;
@@ -89,6 +88,7 @@ button:hover {
     width: 90%;
     max-width: 500px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    overflow-y: auto;
 }
 
 .modal-content h2 {
@@ -132,6 +132,10 @@ button:hover {
     font-size: 24px;
     cursor: pointer;
     color: #fff;
+}
+
+.close:hover {
+    color: #ccc;
 }
 
 footer {
